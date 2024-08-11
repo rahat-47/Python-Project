@@ -1,0 +1,74 @@
+Bus name,Departure time,arrival time,price/seat
+Satkhira Line,5:30 AM,2:30 PM,৳ 600
+Satkhira Line,6:00 AM,3:00 PM,৳ 650
+Tungipara Express,6:10 AM,11:50 AM,৳ 650
+Hanif Enterprise,6:25 AM,1:10 PM,৳ 650
+Satkhira Line,6:30 AM,3:15 PM,৳ 650
+Hanif Enterprise,6:30 AM,1:45 PM,৳ 650
+Hanif Enterprise,6:30 AM,12:30 PM,৳ 650
+Royal Coach,6:30 AM,12:00 PM,৳ 1000
+Hanif Enterprise,6:45 AM,1:15 PM,৳ 1100
+Satkhira Line,7:00 AM,4:00 PM,৳ 650
+SHOHAGH PARIBAHAN,7:15 AM,3:15 PM,৳ 650
+Hanif Enterprise,7:30 AM,3:00 PM,৳ 650
+Royal Coach,7:45 AM,12:00 PM,৳ 650
+Tungipara Express,7:50 AM,1:30 PM,৳ 900
+SHOHAGH PARIBAHAN,8:15 AM,4:15 PM,৳ 1000
+Satkhira Line,8:30 AM,5:00 PM,৳ 650
+Tungipara Express,8:45 AM,2:25 PM,৳ 900
+SHOHAGH PARIBAHAN,9:00 AM,5:00 PM,৳ 900
+SHOHAGH PARIBAHAN,9:15 AM,5:15 PM,৳ 900
+SHOHAGH PARIBAHAN,9:40 AM,5:40 PM,৳ 650
+Tungipara Express,10:05 AM,3:05 PM,৳ 650
+Hanif Enterprise,10:15 AM,4:30 PM,৳ 1200
+Satkhira Line,10:45 AM,7:45 PM,৳ 800
+Tungipara Express,11:10 AM,4:50 PM,৳ 650
+SHOHAGH PARIBAHAN,11:45 AM,7:45 PM,৳ 650
+SHOHAGH PARIBAHAN,11:59 AM,7:59 PM,৳ 650
+Hanif Enterprise,12:15 PM,5:45 PM,৳ 650
+Tungipara Express,12:20 PM,6:00 PM,৳ 650
+Satkhira Line,12:45 PM,7:00 PM,৳ 650
+SP Golden Line,2:00 PM,6:00 PM,৳ 650
+Hanif Enterprise,2:00 PM,9:15 PM,৳ 650
+Satkhira Line,2:00 PM,7:29 PM,৳ 800
+Hanif Enterprise,2:15 PM,9:00 PM,৳ 650
+Tungipara Express,2:20 PM,8:00 PM,৳ 650
+SHOHAGH PARIBAHAN,2:50 PM,10:50 PM,৳ 650
+SHOHAGH PARIBAHAN,3:10 PM,11:10 PM,৳ 900
+Tungipara Express,3:20 PM,8:25 PM,৳ 1200
+SHOHAGH PARIBAHAN,3:30 PM,11:30 PM,৳ 650
+Hanif Enterprise,3:45 PM,9:45 PM,৳ 800
+SP Golden Line,4:00 PM,10:00 PM,৳ 650
+Satkhira Line,4:00 PM,8:32 PM,৳ 650
+Hanif Enterprise,4:00 PM,11:15 PM,৳ 600
+Tungipara Express,4:20 PM,10:00 PM,৳ 650
+SHOHAGH PARIBAHAN,5:00 PM,1:00 AM,৳ 650
+Tungipara Express,5:20 PM,10:00 PM,৳ 650
+SHOHAGH PARIBAHAN,5:30 PM,1:30 AM,৳ 1200
+Hanif Enterprise,6:00 PM,1:15 AM,৳ 800
+Tungipara Express,6:20 PM,10:00 PM,৳ 650
+SHOHAGH PARIBAHAN,7:00 PM,3:00 AM,৳ 650
+Hanif Enterprise,7:00 PM,4:30 AM,৳ 650
+Tungipara Express,7:20 PM,1:00 AM,৳ 650
+SHOHAGH PARIBAHAN,7:25 PM,3:25 AM,৳ 650
+Satkhira Line,8:00 PM,11:30 PM,৳ 650
+Tungipara Express,8:15 PM,1:00 AM,৳ 650
+Royal Coach,8:30 PM,3:00 AM,৳ 650
+Hanif Enterprise,8:45 PM,7:15 AM,৳ 650
+Hanif Enterprise,8:45 PM,3:45 AM,৳ 900
+Royal Coach,9:30 PM,4:00 AM,৳ 650
+Satkhira Line,9:30 PM,4:48 AM,৳ 650
+Royal Coach,9:30 PM,5:00 AM,৳ 900
+Royal Coach,9:30 PM,5:00 AM,৳ 900
+M R Paribahan,9:45 PM,5:15 AM,৳ 1300 | ৳ 1000
+Satkhira Line,10:00 PM,7:30 AM,৳ 1400 | ৳ 1100
+SP Golden Line,10:00 PM,3:30 AM,৳ 1200
+Hanif Enterprise,10:00 PM,3:15 AM,৳ 900
+Soudia Coach Service,10:45 PM,5:00 AM,৳ 600
+Tungipara Express,10:45 PM,4:25 AM,৳ 900
+Royal Coach,11:00 PM,3:00 AM,৳ 650
+Hanif Enterprise,11:00 PM,5:45 AM,৳ 800
+Hanif Enterprise,11:30 PM,6:15 AM,৳ 650
+SHOHAGH PARIBAHAN,11:50 PM,7:50 AM,৳ 1300 | ৳ 1000
+Royal Coach,11:55 PM,5:00 AM,৳ 650
+Royal Coach,11:55 PM,4:00 AM,৳ 650

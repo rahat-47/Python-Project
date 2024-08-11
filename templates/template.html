@@ -1,0 +1,305 @@
+{% load static%}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{name}}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Travello template project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+    <link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <style>
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #eef2f7;
+    color: #333;
+}
+h1 {
+    text-align: center;
+    color: #4a4a4a;
+    margin: 50px 50px 75px 100px;
+    font-size: 2.5em;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    font-size: 1em;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, 0.1);
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+th {
+    background-color: #007bff;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+tr {
+    background-color: #f0f0f0; /* Change this to the color you want */
+}
+tr:hover {
+    background-color: #d0d0d0; /* Change this to the hover color you want */
+    transition: background-color 0.3s ease-in-out;
+}
+.btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease-in-out;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+form {
+    margin: 0;
+}
+</style>
+</head>
+<body>
+    <h1>Showing Scraping Data</h1>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="header_content d-flex flex-row align-items-center justify-content-start">
+                        <div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+                            <div class="logo"><a href="..">Travel Mate</a></div>
+                            {% if user.is_authenticated %}
+                                <div class="header_phone ml-auto" style="color: GreenYellow;">Welcome, {{user.first_name}}</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   
+
+
+
+ <!-- Display messages -->
+ {% if messages %}
+ <ul class="messages">
+     {% for message in messages %}
+         <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+     {% endfor %}
+ </ul>
+{% endif %}
+
+
+
+<table>
+ <thead>
+     <tr>
+         {% for header in headers %}
+             <th>{{ header }}</th>
+         {% endfor %}
+         <th></th> <!-- New column for the button -->
+     </tr>
+ </thead>
+ <tbody>
+     {% for row in rows %}
+         <tr>
+             {% for cell in row %}
+                 <td>{{ cell }}</td>
+             {% endfor %}
+             <td>
+                 <form action="{% url 'add_favorite' %}" method="post" class="add-to-favorite-form">
+                     {% csrf_token %}
+                     <input type="hidden" name="row_data" value="{{ row|join:',' }}">
+                     <input type="hidden" name="row_id" value="{{ forloop.counter }}">
+                     <button type="submit" class="btn">Add to Favourite</button>
+                 </form>
+             </td>
+         </tr>
+     {% endfor %}
+ </tbody>
+</table>
+
+<!-- Pass logged-in status from backend to frontend -->
+<script>
+ const isLoggedIn = {{ user.is_authenticated|yesno:"true,false" }};
+</script>
+
+<!-- Modal for login alert -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+ <div class="modal-dialog" role="document">
+     <div class="modal-content">
+         <div class="modal-header">
+             <h5 class="modal-title" id="loginModalLabel">Login Required</h5>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+             </button>
+         </div>
+         <div class="modal-body">
+             You need to be logged in to add to favourites. <a href="{% url 'login' %}">Click here to login</a>.
+         </div>
+         <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         </div>
+     </div>
+ </div>
+</div>
+
+<script>
+ $(document).ready(function() {
+     $('.add-to-favorite-form').on('submit', function(event) {
+         if (!isLoggedIn) {
+             event.preventDefault();
+             $('#loginModal').modal('show');
+         }
+     });
+ });
+</script>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %} <table>
+    <thead>
+        <tr>
+            {% for header in headers %}
+                <th>{{ header }}</th>
+            {% endfor %}
+            <th></th> <!-- New column for the button -->
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in rows %}
+            <tr data-row-id="{{ forloop.counter }}">
+                {% for cell in row %}
+                    <td>{{ cell }}</td>
+                {% endfor %}
+                <td>
+                    <form action="{% url 'add_favorite' %}" method="post" class="add-to-favorite-form">
+                        {% csrf_token %}
+                        <input type="hidden" name="row_data" value="{{ row|join:',' }}">
+                        <input type="hidden" name="row_id" value="{{ forloop.counter }}">
+                        <button type="submit" class="btn add-favorite-btn">Add to Favourite</button>
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<!-- Pass logged-in status from backend to frontend -->
+<script>
+ const isLoggedIn = {{ user.is_authenticated|yesno:"true,false" }};
+</script>
+
+<!-- Modal for login alert -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login Required</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                You need to be logged in to add to favourites. <a href="{% url 'login' %}">Click here to login</a>.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for already added alert -->
+<div class="modal fade" id="alreadyAddedModal" tabindex="-1" role="dialog" aria-labelledby="alreadyAddedModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="alreadyAddedModalLabel">Already Added</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                This item has already been added to your favourites.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery for handling form submissions -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap for modals -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+ $(document).ready(function() {
+     const addedFavorites = new Set();
+
+     $('.add-to-favorite-form').on('submit', function(event) {
+         const rowId = $(this).find('input[name="row_id"]').val();
+
+         if (!isLoggedIn) {
+             event.preventDefault();
+             $('#loginModal').modal('show');
+             return;
+         }
+
+         if (addedFavorites.has(rowId)) {
+             event.preventDefault();
+             $('#alreadyAddedModal').modal('show');
+         } else {
+             addedFavorites.add(rowId);
+         }
+     });
+ });
+</script>
+ {% endcomment %}
+
+
+</body>
+</html>

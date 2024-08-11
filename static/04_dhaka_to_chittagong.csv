@@ -1,0 +1,114 @@
+Bus_name,Departure_time,Arrival_time,price/seat
+Hanif Enterprise,4:00 AM,10:00 AM,? 680
+Hanif Enterprise,4:30 AM,5:00 PM,? 680
+Hanif Enterprise,5:00 AM,11:00 AM,? 680
+Hanif Enterprise,5:30 AM,11:30 AM,? 680
+Jui Express,6:00 AM,12:30 PM,? 850
+Hanif Enterprise,6:00 AM,12:00 PM,? 680
+Ena Transport (Pvt) Ltd,6:00 AM,2:00 PM,? 670
+Hanif Enterprise,6:15 AM,12:30 PM,? 680
+Soudia Coach Service,6:30 AM,4:00 PM,? 950
+SHOHAGH PARIBAHAN,7:00 AM,3:00 PM,? 1600
+Jui Express,7:00 AM,1:30 PM,? 2000
+Soudia Coach Service,7:30 AM,2:00 PM,? 850
+Saintmartin Hyundai (Robi Express),8:15 AM,1:15 PM,? 950
+Hanif Enterprise,8:30 AM,2:00 PM,? 1400
+Ena Transport (Pvt) Ltd,8:30 AM,4:30 PM,? 1400 | ? 1200
+SHOHAGH PARIBAHAN,8:30 AM,4:30 PM,? 670
+Saintmartin Hyundai (Robi Express),8:45 AM,2:15 PM,? 1600
+Soudia Coach Service,9:00 AM,3:00 PM,? 2000
+Hanif Enterprise,9:00 AM,4:00 PM,? 1400
+Ena Transport (Pvt) Ltd,9:00 AM,3:00 PM,? 950
+Soudia Coach Service,9:30 AM,3:00 PM,? 680
+SHOHAGH PARIBAHAN,9:30 AM,5:30 PM,? 670
+Soudia Coach Service,10:00 AM,3:30 PM,? 680
+Soudia Coach Service,10:00 AM,4:00 PM,? 1600
+Hanif Enterprise,10:00 AM,5:00 PM,? 2000
+Ena Transport (Pvt) Ltd,10:30 AM,4:30 PM,? 680
+Ena Transport (Pvt) Ltd,10:30 AM,6:30 PM,? 950
+SHOHAGH PARIBAHAN,11:00 AM,7:00 PM,? 680
+Hanif Enterprise,11:00 AM,5:00 PM,? 670
+Soudia Coach Service,11:15 AM,4:45 PM,? 670
+Ena Transport (Pvt) Ltd,11:30 AM,7:00 PM,? 1600
+Soudia Coach Service,11:30 AM,5:30 PM,? 2000
+Hanif Enterprise,12:00 PM,7:00 PM,? 680
+SHOHAGH PARIBAHAN,12:30 PM,8:30 PM,? 680
+Ena Transport (Pvt) Ltd,1:00 PM,10:00 PM,? 750
+Hanif Enterprise,1:00 PM,8:00 PM,? 950
+Hanif Enterprise,1:30 PM,7:00 PM,? 680
+Soudia Coach Service,2:00 PM,8:00 PM,? 1400
+Hanif Enterprise,2:00 PM,9:00 PM,? 670
+Soudia Coach Service,2:15 PM,7:45 PM,? 680
+Ena Transport (Pvt) Ltd,2:20 PM,10:00 PM,? 1400 | ? 1200
+Soudia Coach Service,2:30 PM,8:30 PM,? 950
+SHOHAGH PARIBAHAN,2:30 PM,10:30 PM,? 680
+Soudia Coach Service,2:45 PM,8:45 PM,? 680
+Hanif Enterprise,3:00 PM,10:00 PM,? 670
+Saintmartin Hyundai (Robi Express),3:15 PM,9:15 PM,? 1200
+SHOHAGH PARIBAHAN,3:30 PM,11:30 PM,? 1600
+Ena Transport (Pvt) Ltd,3:30 PM,11:00 PM,? 2000
+Hanif Enterprise,3:30 PM,9:00 PM,? 680
+Soudia Coach Service,4:00 PM,12:00 AM,? 680
+Hanif Enterprise,4:00 PM,11:00 PM,? 1400
+Ena Transport (Pvt) Ltd,4:00 PM,11:30 PM,? 1400
+Soudia Coach Service,4:00 PM,10:00 PM,? 670
+Soudia Coach Service,4:15 PM,9:45 PM,? 1400 | ? 1200
+SHOHAGH PARIBAHAN,4:15 PM,12:15 AM,? 1200
+Saintmartin Hyundai (Robi Express),4:15 PM,9:00 PM,? 680
+Soudia Coach Service,5:00 PM,11:00 PM,? 670
+Hanif Enterprise,5:00 PM,12:00 AM,? 950
+Saintmartin Hyundai (Robi Express),5:15 PM,10:00 PM,? 680
+Soudia Coach Service,5:15 PM,10:45 PM,? 1600
+Ena Transport (Pvt) Ltd,5:30 PM,12:20 AM,? 2000
+SHOHAGH PARIBAHAN,5:30 PM,1:30 AM,? 1400
+Royal Coach,5:30 PM,1:00 AM,? 950
+Soudia Coach Service,6:15 PM,11:45 PM,? 680
+Saintmartin Hyundai (Robi Express),6:30 PM,11:50 PM,? 1400
+Times Travels,7:00 PM,5:30 AM,? 680
+Hanif Enterprise,7:00 PM,12:42 AM,? 670
+Royal Coach,8:00 PM,5:00 AM,? 1600
+Ena Transport (Pvt) Ltd,8:00 PM,5:00 AM,? 2000
+Times Travels,8:00 PM,3:00 AM,? 1400 | ? 1000
+Evergreen Transport Ltd,8:15 PM,2:30 AM,? 1400 | ? 1000
+Saintmartin Travels,8:15 PM,1:00 AM,? 680
+Saintmartin Travels,9:00 PM,1:00 AM,? 900
+Tuba Line,9:00 PM,2:30 AM,? 1500
+Royal Coach,9:00 PM,8:00 AM,? 680
+Saintmartin Hyundai (Robi Express),9:10 PM,1:00 AM,? 1400 | ? 1000
+Ena Transport (Pvt) Ltd,10:00 PM,3:00 AM,? 1400 | ? 1000
+Royal Coach,10:00 PM,5:00 AM,? 670
+Hanif Enterprise,10:30 PM,5:30 AM,? 1500
+Saintmartin Hyundai (Robi Express),10:30 PM,5:00 AM,? 1000
+Evergreen Transport Ltd,10:30 PM,5:30 AM,? 1400
+Ena Transport (Pvt) Ltd,10:30 PM,5:30 AM,? 1500
+Soudia Coach Service,10:45 PM,6:00 AM,? 1500
+Hanif Enterprise,11:00 PM,5:00 AM,? 1500
+Hanif Enterprise,11:00 PM,5:30 AM,? 1500
+Ena Transport (Pvt) Ltd,11:00 PM,6:45 AM,? 1500
+Evergreen Transport Ltd,11:00 PM,6:00 AM,? 1500
+SHOHAGH PARIBAHAN,11:00 PM,7:00 AM,? 1500
+Soudia Coach Service,11:15 PM,5:30 AM,? 1300 | ? 800
+Soudia Coach Service,11:15 PM,6:00 AM,? 1400 | ? 900
+Soudia Coach Service,11:15 PM,6:00 AM,? 1200
+Evergreen Transport Ltd,11:15 PM,5:00 AM,? 800
+Ena Transport (Pvt) Ltd,11:20 PM,6:00 AM,? 1400 | ? 1000
+Ena Transport (Pvt) Ltd,11:20 PM,6:30 AM,? 1400 | ? 1000
+Saintmartin Hyundai (Robi Express),11:30 PM,5:00 AM,? 680
+Ena Transport (Pvt) Ltd,11:30 PM,7:30 AM,? 1400
+Hanif Enterprise,11:30 PM,5:30 AM,? 680
+Soudia Coach Service,11:30 PM,5:30 AM,? 670
+Saintmartin Hyundai (Robi Express),11:30 PM,3:00 AM,? 680
+Evergreen Transport Ltd,11:30 PM,5:30 AM,? 1400 | ? 1200
+Saintmartin Hyundai (Robi Express),11:40 PM,6:00 AM,? 680
+SHOHAGH PARIBAHAN,11:45 PM,7:45 AM,? 670
+Royal Coach,11:45 PM,8:00 AM,? 680
+Saintmartin Hyundai (Robi Express),11:45 PM,5:15 AM,? 1600
+M R Paribahan,11:45 PM,6:00 AM,? 2000
+Tuba Line,11:50 PM,3:00 AM,? 950
+Evergreen Transport Ltd,11:55 PM,5:30 AM,? 1200
+Saintmartin Hyundai (Robi Express),11:55 PM,3:00 AM,? 680
+Saintmartin Travels,11:55 PM,9:00 AM,? 1000
+Saintmartin Hyundai (Robi Express),11:55 PM,6:15 AM,? 800
+Royal Travels,11:55 PM,7:00 AM,? 750
+Royal Coach,11:55 PM,6:00 AM,? 670
+SHOHAGH PARIBAHAN,11:59 PM,7:59 AM,? 1400
